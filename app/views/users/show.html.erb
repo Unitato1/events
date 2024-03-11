@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+<h1><%= @user.username %> Events</h1>
+<% @events.each do |event| %>
+  <div class="event">
+    <div class="att">Name: <%= event.name %></div>
+    <div class="att">Date: <%= event.date %></div>
+    <div class="att">Description: <%= event.description %></div>
+    <%= link_to 'This event', event_path(event)%>
+</div>
+<%end%>
+<%= link_to 'Sign out', destroy_user_session_path, data: {turbo_method: :delete }%>
+<%= link_to 'Create new event', new_event_path %>
+<% else %>
+<%= link_to 'Sign up', new_registration_path(:user) %>
+<%= link_to 'Sign in', new_session_path(:user) %>
+<%end%>

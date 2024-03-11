@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is created following https://www.theodinproject.com/lessons/ruby-on-rails-private-events and
+is focused on models.
 
-Things you may want to cover:
+Database model:
 
-* Ruby version
+- User can create events.
 
-* System dependencies
+- User can attend many events.
 
-* Configuration
+- Event can be attended by many users.
 
-* Database creation
+- User model attributes are name, signup details
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Even model attributes are date, location, decription and name

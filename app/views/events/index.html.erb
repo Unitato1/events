@@ -1,0 +1,10 @@
+<h1>Currently happening events</h1>
+<% @events.each do |event| %>
+  <div class="event">
+    <div class="att">Name: <%= event.name %></div>
+    <div class="att">Date: <%= event.date %></div>
+    <div class="att"><%= link_to "Show descrption", event_path(event) %></div>
+    </div>
+<%end%>
+<%= link_to 'Sign up', new_registration_path(:user) %>
+<%= link_to 'Sign in', new_session_path(:user) %>

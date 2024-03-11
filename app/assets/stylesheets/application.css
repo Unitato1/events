@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.event {
+  display: flex;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: black;
+}
+.event > div {
+  flex: 1;
+  border: 1px solid white;
+  color: whitesmoke;
+}
